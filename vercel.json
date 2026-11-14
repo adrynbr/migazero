@@ -1,0 +1,1 @@
+{"redirects":[{"source":"/(.*)","has":[{"type":"host","value":"migazero.vercel.app"}],"destination":"https://pratikasa.vercel.app/migazero","permanent":false}]}
