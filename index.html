@@ -14,9 +14,9 @@
 <script>
 /* ===== CONFIGURAÇÃO — preencha antes de publicar ===== */
 window.MZ = {
-  CHECKOUT_URL: "https://pay.kaiross.com.br/l7B5HY36NdSV",      // link do checkout Kaiross do MigaZero
-  META_PIXEL_ID: "",     // ID do Pixel do Meta (opcional)
-  GA_ID: ""              // ID do Google Tag, ex.: G-XXXXXXX (opcional)
+CHECKOUT_URL: "https://pay.kaiross.com.br/l7B5HY36NdSV",      // link do checkout Kaiross do MigaZero
+META_PIXEL_ID: "",     // ID do Pixel do Meta (opcional)
+GA_ID: ""              // ID do Google Tag, ex.: G-XXXXXXX (opcional)
 };
 </script>
 <style>
@@ -31,10 +31,8 @@ h1{font-size:clamp(1.7rem,5.6vw,2.5rem);line-height:1.15;font-weight:800;letter-
 h2{font-size:clamp(1.45rem,4.6vw,2.1rem);line-height:1.2;font-weight:800;letter-spacing:-.015em;margin-bottom:14px}
 p+p{margin-top:12px}
 :focus-visible{outline:3px solid var(--purple);outline-offset:3px;border-radius:6px}
-
 /* announcement */
 .topbar{background:var(--txt);color:#fff;text-align:center;font-size:.8rem;font-weight:600;padding:8px 12px;letter-spacing:.02em}
-
 /* HERO */
 .hero{padding:16px 0 28px}
 .hero-grid{display:grid;gap:22px}
@@ -70,7 +68,6 @@ p+p{margin-top:12px}
 .trust div{background:var(--bg);border-radius:10px;padding:10px;font-size:.78rem;font-weight:600;display:flex;gap:8px;align-items:center}
 .trust svg{flex:0 0 22px;color:var(--purple)}
 .secure{font-size:.75rem;color:var(--muted);text-align:center;margin-top:10px}
-
 /* SECTIONS */
 .demo{max-width:380px;margin:24px auto 0;text-align:center}
 .demo video{width:100%;aspect-ratio:9/16;border-radius:18px;background:#000;box-shadow:0 12px 30px rgba(0,0,0,.18);display:block}
@@ -130,7 +127,6 @@ footer{background:#fff;border-top:1px solid var(--line);padding:26px 0 30px;font
 footer .fbrand{font-weight:800;color:var(--txt);font-size:1rem;margin-bottom:6px}
 footer nav{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;margin-top:12px}
 footer nav a{color:var(--link);text-decoration:underline;cursor:pointer;padding:4px 0}
-
 /* sticky bar */
 .sticky{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.08);padding:8px 14px 10px;z-index:40;transform:translateY(110%);transition:transform .25s}
 .sticky.show{transform:none}
@@ -140,7 +136,6 @@ footer nav a{color:var(--link);text-decoration:underline;cursor:pointer;padding:
 .sticky .sp small{font-size:.72rem;color:var(--green-d);font-weight:700}
 .sticky .btn{min-height:50px;font-size:.95rem}
 .sticky .consent{margin-top:6px;padding:0;border:0;background:none;font-size:.66rem;max-width:640px;margin-left:auto;margin-right:auto}
-
 /* cookie banner */
 .cookie{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-radius:16px 16px 0 0;box-shadow:0 -10px 30px rgba(0,0,0,.18);padding:18px 18px 22px;display:none}
 .cookie.show{display:block}
@@ -150,7 +145,6 @@ footer nav a{color:var(--link);text-decoration:underline;cursor:pointer;padding:
 .c-ok{background:var(--green);color:#fff;border:0}
 .c-min{background:#fff;color:var(--txt);border:1px solid var(--line)}
 .cookie a{color:var(--link);text-decoration:underline;cursor:pointer}
-
 /* modal */
 dialog{border:0;border-radius:16px;padding:0;width:min(760px,94vw);max-height:88vh;box-shadow:0 20px 60px rgba(0,0,0,.3)}
 dialog::backdrop{background:rgba(17,17,17,.55)}
@@ -161,324 +155,283 @@ dialog::backdrop{background:rgba(17,17,17,.55)}
 .mbody h3{font-size:1rem;margin:18px 0 6px;color:var(--txt)}
 .mbody ul{padding-left:20px}
 .mbody .upd{color:var(--muted);font-size:.8rem}
-
 @media (min-width:860px){
-  body{padding-bottom:0}
-  .hero{padding:28px 0 40px}
-  .hero-grid{grid-template-columns:55fr 45fr;align-items:start;gap:30px}
-  .gallery{position:sticky;top:20px}
-  .g-main{aspect-ratio:1/1}
-  .split{grid-template-columns:1fr 1fr;gap:40px}
-  .split.rev .txt{order:2}
-  .steps{grid-template-columns:repeat(3,1fr)}
-  .step{flex-direction:column}
-  .obj{grid-template-columns:repeat(3,1fr)}
-  section.blk{padding:52px 0}
-  .cookie{right:auto;left:24px;bottom:24px;width:400px;border-radius:16px}
-  .cookie .cbtns{grid-template-columns:1fr}
-  .sticky{display:none}
+body{padding-bottom:0}
+.hero{padding:28px 0 40px}
+.hero-grid{grid-template-columns:55fr 45fr;align-items:start;gap:30px}
+.gallery{position:sticky;top:20px}
+.g-main{aspect-ratio:1/1}
+.split{grid-template-columns:1fr 1fr;gap:40px}
+.split.rev .txt{order:2}
+.steps{grid-template-columns:repeat(3,1fr)}
+.step{flex-direction:column}
+.obj{grid-template-columns:repeat(3,1fr)}
+section.blk{padding:52px 0}
+.cookie{right:auto;left:24px;bottom:24px;width:400px;border-radius:16px}
+.cookie .cbtns{grid-template-columns:1fr}
+.sticky{display:none}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-
 <div class="topbar">FRETE GRÁTIS · 7 DIAS PARA DEVOLVER</div>
-
 <main>
-<!-- ===== 1. PRIMEIRA DOBRA ===== -->
 <section class="hero" id="topo">
- <div class="wrap hero-grid">
-  <div class="gallery">
-   <div class="g-main"><img id="gmain" src="img/produto.webp" alt="Aspirador portátil MigaZero preto com bico de frestas encaixado" width="420" height="411"></div>
-   <div class="thumbs" role="group" aria-label="Fotos do produto">
-    <button aria-current="true" data-src="img/produto.webp" data-alt="Aspirador portátil MigaZero preto com bico de frestas encaixado"><img src="img/produto.webp" alt=""></button>
-    <button data-src="img/kit.webp" data-alt="Kit MigaZero: aspirador, bico de frestas, escova e cabo USB"><img src="img/kit.webp" alt=""></button>
-    <button data-src="img/uso-banco.webp" data-alt="Bico do MigaZero aspirando o estofado do banco"><img src="img/uso-banco.webp" alt=""></button>
-    <button data-src="img/acessorios.webp" data-alt="Escova e bico de frestas do MigaZero"><img src="img/acessorios.webp" alt=""></button>
-   </div>
-  </div>
-
-  <div class="buy">
-   <span class="chip">Pode comer no carro.</span>
-   <div class="brand">MIGAZERO</div>
-   <div class="pname">Aspirador Portátil Sem Fio Recarregável MigaZero com Bico de Frestas e Escova</div>
-   <h1>Quantas vezes você já gritou "não come no carro"?</h1>
-   <p class="sub">Com o MigaZero, o biscoito pode cair. O bico fino puxa o farelo da cadeirinha e da fresta do banco enquanto você espera na porta da escola, sem fio e sem ir ao posto.</p>
-   <ul class="bul">
-    <li>Bico fino que entra onde a sua mão não entra</li>
-    <li>Sem fio: recarrega no USB e fica guardado no carro</li>
-    <li>Escova para soltar o farelo grudado no tecido</li>
-   </ul>
-   <div class="price"><strong>R$ 119,90</strong><span class="free">Frete grátis</span></div>
-   <div style="height:16px"></div>
-   <a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a>
-   <div class="consent">Ao seguir, você concorda com nossa <a data-modal="privacidade">Política de Privacidade</a>, <a data-modal="cookies">Política de Cookies</a>, <a data-modal="termos">Termos de Compra</a> e <a data-modal="troca">Política de Troca e Devolução</a>.</div>
-   <div class="trust">
-    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>Frete grátis para todo o Brasil</div>
-    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>7 dias para devolver</div>
-   </div>
-   <p class="secure">Pagamento pelo checkout Kaiross</p>
-  </div>
- </div>
+<div class="wrap hero-grid">
+<div class="gallery">
+<div class="g-main"><img id="gmain" src="img/produto.webp" alt="Aspirador portátil MigaZero preto com bico de frestas encaixado" width="420" height="411"></div>
+<div class="thumbs" role="group" aria-label="Fotos do produto">
+<button aria-current="true" data-src="img/produto.webp" data-alt="Aspirador portátil MigaZero preto com bico de frestas encaixado"><img src="img/produto.webp" alt=""></button>
+<button data-src="img/kit.webp" data-alt="Kit MigaZero: aspirador, bico de frestas, escova e cabo USB"><img src="img/kit.webp" alt=""></button>
+<button data-src="img/uso-banco.webp" data-alt="Bico do MigaZero aspirando o estofado do banco"><img src="img/uso-banco.webp" alt=""></button>
+<button data-src="img/acessorios.webp" data-alt="Escova e bico de frestas do MigaZero"><img src="img/acessorios.webp" alt=""></button>
+</div>
+</div>
+<div class="buy">
+<span class="chip">Pode comer no carro.</span>
+<div class="brand">MIGAZERO</div>
+<div class="pname">Aspirador Portátil Sem Fio Recarregável MigaZero com Bico de Frestas e Escova</div>
+<h1>Quantas vezes você já gritou "não come no carro"?</h1>
+<p class="sub">Com o MigaZero, o biscoito pode cair. O bico fino puxa o farelo da cadeirinha e da fresta do banco enquanto você espera na porta da escola, sem fio e sem ir ao posto.</p>
+<ul class="bul">
+<li>Bico fino que entra onde a sua mão não entra</li>
+<li>Sem fio: recarrega no USB e fica guardado no carro</li>
+<li>Escova para soltar o farelo grudado no tecido</li>
+</ul>
+<div class="price"><strong>R$ 119,90</strong><span class="free">Frete grátis</span></div>
+<div style="height:16px"></div>
+<a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a>
+<div class="consent">Ao seguir, você concorda com nossa <a data-modal="privacidade">Política de Privacidade</a>, <a data-modal="cookies">Política de Cookies</a>, <a data-modal="termos">Termos de Compra</a> e <a data-modal="troca">Política de Troca e Devolução</a>.</div>
+<div class="trust">
+<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>Frete grátis para todo o Brasil</div>
+<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>7 dias para devolver</div>
+</div>
+<p class="secure">Pagamento pelo checkout Kaiross</p>
+</div>
+</div>
 </section>
-
-<!-- ===== 2. PROBLEMA ===== -->
 <section class="blk">
- <div class="wrap split">
-  <div class="txt">
-   <div class="kicker">O banco de trás</div>
-   <h2>Seu carro virou lancheira e você nem percebeu quando.</h2>
-   <ul class="crumbs">
-    <li>Biscoito esmagado na cadeirinha.</li>
-    <li>Farelo de salgadinho na fresta do banco.</li>
-    <li>Pipoca embaixo do tapete.</li>
-    <li>Areia do parquinho no assoalho.</li>
-   </ul>
-   <p>Você limpa no domingo e na terça já está tudo igual. E aí sobra pra criança ouvir:</p>
-   <p class="quote">"NÃO COME NO CARRO!"</p>
-  </div>
-  <div class="media" aria-hidden="true">
-   <svg viewBox="0 0 400 300" width="100%" height="100%">
-    <rect width="400" height="300" fill="#fff"/>
-    <rect x="110" y="40" width="180" height="210" rx="40" fill="#2b2b33"/>
-    <rect x="130" y="60" width="140" height="120" rx="28" fill="#3a3a45"/>
-    <rect x="125" y="185" width="150" height="55" rx="18" fill="#3a3a45"/>
-    <rect x="190" y="70" width="20" height="120" rx="6" fill="#7A00FF" opacity=".55"/>
-    <g fill="#d39b4a">
-     <circle cx="150" cy="200" r="5"/><circle cx="168" cy="215" r="3.5"/><circle cx="235" cy="205" r="6"/><circle cx="252" cy="222" r="3"/><circle cx="200" cy="228" r="4.5"/><circle cx="142" cy="228" r="3"/><circle cx="262" cy="196" r="3.5"/><circle cx="215" cy="212" r="2.5"/>
-     <rect x="176" y="195" width="16" height="9" rx="3" transform="rotate(20 184 199)"/>
-     <rect x="225" y="226" width="14" height="8" rx="3" transform="rotate(-25 232 230)"/>
-     <circle cx="96" cy="262" r="4"/><circle cx="310" cy="268" r="5"/><circle cx="330" cy="255" r="3"/><circle cx="80" cy="250" r="2.5"/>
-    </g>
-   </svg>
-  </div>
- </div>
+<div class="wrap split">
+<div class="txt">
+<div class="kicker">O banco de trás</div>
+<h2>Seu carro virou lancheira e você nem percebeu quando.</h2>
+<ul class="crumbs">
+<li>Biscoito esmagado na cadeirinha.</li>
+<li>Farelo de salgadinho na fresta do banco.</li>
+<li>Pipoca embaixo do tapete.</li>
+<li>Areia do parquinho no assoalho.</li>
+</ul>
+<p>Você limpa no domingo e na terça já está tudo igual. E aí sobra pra criança ouvir:</p>
+<p class="quote">"NÃO COME NO CARRO!"</p>
+</div>
+<div class="media" aria-hidden="true">
+<svg viewBox="0 0 400 300" width="100%" height="100%">
+<rect width="400" height="300" fill="#fff"/>
+<rect x="110" y="40" width="180" height="210" rx="40" fill="#2b2b33"/>
+<rect x="130" y="60" width="140" height="120" rx="28" fill="#3a3a45"/>
+<rect x="125" y="185" width="150" height="55" rx="18" fill="#3a3a45"/>
+<rect x="190" y="70" width="20" height="120" rx="6" fill="#7A00FF" opacity=".55"/>
+<g fill="#d39b4a">
+<circle cx="150" cy="200" r="5"/><circle cx="168" cy="215" r="3.5"/><circle cx="235" cy="205" r="6"/><circle cx="252" cy="222" r="3"/><circle cx="200" cy="228" r="4.5"/><circle cx="142" cy="228" r="3"/><circle cx="262" cy="196" r="3.5"/><circle cx="215" cy="212" r="2.5"/>
+<rect x="176" y="195" width="16" height="9" rx="3" transform="rotate(20 184 199)"/>
+<rect x="225" y="226" width="14" height="8" rx="3" transform="rotate(-25 232 230)"/>
+<circle cx="96" cy="262" r="4"/><circle cx="310" cy="268" r="5"/><circle cx="330" cy="255" r="3"/><circle cx="80" cy="250" r="2.5"/>
+</g>
+</svg>
+</div>
+</div>
 </section>
-
-<!-- ===== 3. SOLUÇÃO ===== -->
 <section class="blk dark">
- <div class="wrap split rev">
-  <div class="txt">
-   <div class="kicker">A virada</div>
-   <p class="big-move">Pode comer <span>no carro.</span></p>
-   <p style="margin-top:16px">Não porque a sujeira deixou de importar. É porque agora você resolve em minutos, ali mesmo.</p>
-   <p>O MigaZero fica no carro. Caiu biscoito? Você liga, passa o bico e o farelo some dentro do copo transparente. Sem tomada, sem posto, sem esperar o fim de semana.</p>
-   <div class="inline-cta"><a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a></div>
-  </div>
-  <div class="media"><img src="img/produto.webp" alt="MigaZero com copo transparente e bico de frestas" loading="lazy" width="420" height="411"></div>
- </div>
+<div class="wrap split rev">
+<div class="txt">
+<div class="kicker">A virada</div>
+<p class="big-move">Pode comer <span>no carro.</span></p>
+<p style="margin-top:16px">Não porque a sujeira deixou de importar. É porque agora você resolve em minutos, ali mesmo.</p>
+<p>O MigaZero fica no carro. Caiu biscoito? Você liga, passa o bico e o farelo some dentro do copo transparente. Sem tomada, sem posto, sem esperar o fim de semana.</p>
+<div class="inline-cta"><a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a></div>
+</div>
+<div class="media"><img src="img/produto.webp" alt="MigaZero com copo transparente e bico de frestas" loading="lazy" width="420" height="411"></div>
+</div>
 </section>
-
 <section class="blk" id="demo">
- <div class="wrap demo-wrap">
-  <div class="txt">
-   <div class="kicker">Veja funcionando</div>
-   <h2>Farelo no banco, nas frestas e na porta. Some tudo.</h2>
-   <p>Bico fino nas frestas, escova no tecido e o copo transparente mostrando tudo o que saiu do carro.</p>
-   <div class="inline-cta"><a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a></div>
-  </div>
-  <div class="demo">
-   <video id="demovid" muted loop playsinline preload="none" poster="img/demo-poster.webp" aria-label="Demonstração do aspirador portátil limpando o interior do carro">
-    <source src="img/demo.mp4" type="video/mp4">
-   </video>
-  </div>
- </div>
+<div class="wrap demo-wrap">
+<div class="txt">
+<div class="kicker">Veja funcionando</div>
+<h2>Farelo no banco, nas frestas e na porta. Some tudo.</h2>
+<p>Bico fino nas frestas, escova no tecido e o copo transparente mostrando tudo o que saiu do carro.</p>
+<div class="inline-cta"><a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a></div>
+</div>
+<div class="demo">
+<video id="demovid" muted loop playsinline preload="none" poster="https://cdn.jsdelivr.net/gh/adrynbr/migazero@574744559d7f3d4bfadc25859122ab2a3392a6ba/img/demo-poster.webp" aria-label="Demonstração do aspirador portátil limpando o interior do carro">
+<source src="https://cdn.jsdelivr.net/gh/adrynbr/migazero@574744559d7f3d4bfadc25859122ab2a3392a6ba/img/demo.mp4" type="video/mp4">
+</video>
+</div>
+</div>
 </section>
-
-<!-- ===== 4. BICO DE FRESTAS ===== -->
 <section class="blk">
- <div class="wrap split">
-  <div class="txt">
-   <div class="kicker">Bico de frestas</div>
-   <h2>O farelo que mora na fresta do banco tem prazo de validade.</h2>
-   <p>Entre o banco e o console existe um vão onde o pano não entra e o dedo não alcança. É lá que se acumula a sujeira de meses.</p>
-   <p>O bico fino do MigaZero entra no vão e puxa o que estava escondido.</p>
-  </div>
-  <div class="media round"><img src="img/uso-banco.webp" alt="Bico fino do MigaZero passando rente ao estofado do banco" loading="lazy" width="300" height="300"></div>
- </div>
+<div class="wrap split">
+<div class="txt">
+<div class="kicker">Bico de frestas</div>
+<h2>O farelo que mora na fresta do banco tem prazo de validade.</h2>
+<p>Entre o banco e o console existe um vão onde o pano não entra e o dedo não alcança. É lá que se acumula a sujeira de meses.</p>
+<p>O bico fino do MigaZero entra no vão e puxa o que estava escondido.</p>
+</div>
+<div class="media round"><img src="img/uso-banco.webp" alt="Bico fino do MigaZero passando rente ao estofado do banco" loading="lazy" width="300" height="300"></div>
+</div>
 </section>
-
-<!-- ===== 5. SEM FIO ===== -->
 <section class="blk">
- <div class="wrap split rev">
-  <div class="txt">
-   <div class="kicker">Sem fio</div>
-   <h2>Ele não fica na garagem. Fica no carro.</h2>
-   <p>O aspirador de casa ficou em casa, e o do posto tem fila e custa ficha. O MigaZero é sem fio e recarrega pelo cabo USB que vem na caixa.</p>
-   <p>Dá para guardar no carro e usar na hora em que a bagunça acontece.</p>
-  </div>
-  <div class="media"><img src="img/cabo.webp" alt="Cabo USB de recarga que acompanha o MigaZero" loading="lazy" width="320" height="205"></div>
- </div>
+<div class="wrap split rev">
+<div class="txt">
+<div class="kicker">Sem fio</div>
+<h2>Ele não fica na garagem. Fica no carro.</h2>
+<p>O aspirador de casa ficou em casa, e o do posto tem fila e custa ficha. O MigaZero é sem fio e recarrega pelo cabo USB que vem na caixa.</p>
+<p>Dá para guardar no carro e usar na hora em que a bagunça acontece.</p>
+</div>
+<div class="media"><img src="img/cabo.webp" alt="Cabo USB de recarga que acompanha o MigaZero" loading="lazy" width="320" height="205"></div>
+</div>
 </section>
-
-<!-- ===== 6. ESCOVA ===== -->
 <section class="blk">
- <div class="wrap split">
-  <div class="txt">
-   <div class="kicker">Escova</div>
-   <h2>Farelo grudado no tecido? A escova solta, o MigaZero puxa.</h2>
-   <p>Encaixe a escova, esfregue de leve no estofado da cadeirinha ou no tapete e aspire junto.</p>
-  </div>
-  <div class="media"><img src="img/acessorios.webp" alt="Escova e bico de frestas do MigaZero" loading="lazy" width="200" height="330"></div>
- </div>
+<div class="wrap split">
+<div class="txt">
+<div class="kicker">Escova</div>
+<h2>Farelo grudado no tecido? A escova solta, o MigaZero puxa.</h2>
+<p>Encaixe a escova, esfregue de leve no estofado da cadeirinha ou no tapete e aspire junto.</p>
+</div>
+<div class="media"><img src="img/acessorios.webp" alt="Escova e bico de frestas do MigaZero" loading="lazy" width="200" height="330"></div>
+</div>
 </section>
-
-<!-- ===== 7. COMO FUNCIONA ===== -->
 <section class="blk">
- <div class="wrap">
-  <div class="kicker">Como funciona</div>
-  <h2>Três passos. Nenhuma desculpa.</h2>
-  <div class="steps">
-   <div class="step"><div class="num">1</div><div><h3>Encaixe</h3><p>Coloque o bico de frestas ou a escova.</p></div></div>
-   <div class="step"><div class="num">2</div><div><h3>Ligue</h3><p>Aperte o botão e passe onde caiu a sujeira.</p></div></div>
-   <div class="step"><div class="num">3</div><div><h3>Esvazie</h3><p>Abra o copo transparente no lixo e pronto.</p></div></div>
-  </div>
-  <div class="inline-cta"><a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a></div>
- </div>
+<div class="wrap">
+<div class="kicker">Como funciona</div>
+<h2>Três passos. Nenhuma desculpa.</h2>
+<div class="steps">
+<div class="step"><div class="num">1</div><div><h3>Encaixe</h3><p>Coloque o bico de frestas ou a escova.</p></div></div>
+<div class="step"><div class="num">2</div><div><h3>Ligue</h3><p>Aperte o botão e passe onde caiu a sujeira.</p></div></div>
+<div class="step"><div class="num">3</div><div><h3>Esvazie</h3><p>Abra o copo transparente no lixo e pronto.</p></div></div>
+</div>
+<div class="inline-cta"><a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a></div>
+</div>
 </section>
-
-<!-- ===== 9. O QUE VEM NA CAIXA ===== -->
 <section class="blk">
- <div class="wrap split rev">
-  <div class="txt card">
-   <h2>O que chega na sua casa</h2>
-   <ul class="box-list">
-    <li><b>1×</b> MigaZero (aspirador portátil sem fio)</li>
-    <li><b>1×</b> Bico de frestas</li>
-    <li><b>1×</b> Escova</li>
-    <li><b>1×</b> Cabo USB de recarga</li>
-   </ul>
-  </div>
-  <div class="media"><img src="img/kit.webp" alt="Tudo que vem na caixa: aspirador, bico, escova e cabo USB" loading="lazy" width="420" height="420"></div>
- </div>
+<div class="wrap split rev">
+<div class="txt card">
+<h2>O que chega na sua casa</h2>
+<ul class="box-list">
+<li><b>1×</b> MigaZero (aspirador portátil sem fio)</li>
+<li><b>1×</b> Bico de frestas</li>
+<li><b>1×</b> Escova</li>
+<li><b>1×</b> Cabo USB de recarga</li>
+</ul>
+</div>
+<div class="media"><img src="img/kit.webp" alt="Tudo que vem na caixa: aspirador, bico, escova e cabo USB" loading="lazy" width="420" height="420"></div>
+</div>
 </section>
-
-<!-- ===== 10. ESPECIFICAÇÕES ===== -->
 <section class="blk">
- <div class="wrap" style="max-width:760px">
-  <div class="card">
-   <h2>Detalhes técnicos</h2>
-   <table class="specs">
-    <tr><th scope="row">Alimentação</th><td>DC 5V, 1–2A, recarga por USB</td></tr>
-    <tr><th scope="row">Peso</th><td>0,28 kg</td></tr>
-    <tr><th scope="row">Cor</th><td>Preto</td></tr>
-    <tr><th scope="row">Reservatório</th><td>Copo transparente com filtro</td></tr>
-    <tr><th scope="row">Acessórios</th><td>Bico de frestas, escova e cabo USB</td></tr>
-   </table>
-  </div>
- </div>
+<div class="wrap" style="max-width:760px">
+<div class="card">
+<h2>Detalhes técnicos</h2>
+<table class="specs">
+<tr><th scope="row">Alimentação</th><td>DC 5V, 1–2A, recarga por USB</td></tr>
+<tr><th scope="row">Peso</th><td>0,28 kg</td></tr>
+<tr><th scope="row">Cor</th><td>Preto</td></tr>
+<tr><th scope="row">Reservatório</th><td>Copo transparente com filtro</td></tr>
+<tr><th scope="row">Acessórios</th><td>Bico de frestas, escova e cabo USB</td></tr>
+</table>
+</div>
+</div>
 </section>
-
-<!-- ===== 11. OBJEÇÕES ===== -->
 <section class="blk">
- <div class="wrap">
-  <h2>Antes de você perguntar</h2>
-  <div class="obj">
-   <div class="card"><h3>"Será que presta? Aspirador pequeno não puxa nada."</h3><p>Ele não foi feito para substituir o aspirador de casa. Foi feito para farelo, migalha, areia e poeira de carro, que é exatamente a sujeira que se acumula todo dia.</p></div>
-   <div class="card"><h3>"Vale R$ 119,90?"</h3><p>Faça a conta de quantas vezes você já foi ao lava-rápido só por causa do farelo do banco de trás. O MigaZero fica no carro e trabalha todos os dias.</p></div>
-   <div class="card"><h3>"E se eu não gostar?"</h3><p>Você tem 7 dias após receber para devolver, conforme o Código de Defesa do Consumidor.</p></div>
-  </div>
- </div>
+<div class="wrap">
+<h2>Antes de você perguntar</h2>
+<div class="obj">
+<div class="card"><h3>"Será que presta? Aspirador pequeno não puxa nada."</h3><p>Ele não foi feito para substituir o aspirador de casa. Foi feito para farelo, migalha, areia e poeira de carro, que é exatamente a sujeira que se acumula todo dia.</p></div>
+<div class="card"><h3>"Vale R$ 119,90?"</h3><p>Faça a conta de quantas vezes você já foi ao lava-rápido só por causa do farelo do banco de trás. O MigaZero fica no carro e trabalha todos os dias.</p></div>
+<div class="card"><h3>"E se eu não gostar?"</h3><p>Você tem 7 dias após receber para devolver, conforme o Código de Defesa do Consumidor.</p></div>
+</div>
+</div>
 </section>
-
-<!-- ===== 13. OFERTA ===== -->
 <section class="blk" id="oferta">
- <div class="wrap">
-  <div class="card offer">
-   <span class="chip">Pode comer no carro.</span>
-   <h2>Seu MigaZero, com frete grátis.</h2>
-   <div class="media"><img src="img/kit.webp" alt="Kit MigaZero completo" loading="lazy" width="420" height="420"></div>
-   <ul>
-    <li>MigaZero + bico de frestas + escova + cabo USB</li>
-    <li>Frete grátis para todo o Brasil</li>
-    <li>7 dias para devolver após receber</li>
-   </ul>
-   <div class="price"><strong>R$ 119,90</strong><span class="free">Frete grátis</span></div>
-   <a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a>
-   <div class="consent">Ao seguir, você concorda com nossa <a data-modal="privacidade">Política de Privacidade</a>, <a data-modal="cookies">Política de Cookies</a>, <a data-modal="termos">Termos de Compra</a> e <a data-modal="troca">Política de Troca e Devolução</a>.</div>
-   <p class="secure">Pagamento pelo checkout Kaiross</p>
-  </div>
- </div>
+<div class="wrap">
+<div class="card offer">
+<span class="chip">Pode comer no carro.</span>
+<h2>Seu MigaZero, com frete grátis.</h2>
+<div class="media"><img src="img/kit.webp" alt="Kit MigaZero completo" loading="lazy" width="420" height="420"></div>
+<ul>
+<li>MigaZero + bico de frestas + escova + cabo USB</li>
+<li>Frete grátis para todo o Brasil</li>
+<li>7 dias para devolver após receber</li>
+</ul>
+<div class="price"><strong>R$ 119,90</strong><span class="free">Frete grátis</span></div>
+<a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a>
+<div class="consent">Ao seguir, você concorda com nossa <a data-modal="privacidade">Política de Privacidade</a>, <a data-modal="cookies">Política de Cookies</a>, <a data-modal="termos">Termos de Compra</a> e <a data-modal="troca">Política de Troca e Devolução</a>.</div>
+<p class="secure">Pagamento pelo checkout Kaiross</p>
+</div>
+</div>
 </section>
-
-<!-- ===== 14. FAQ ===== -->
 <section class="blk">
- <div class="wrap" style="max-width:760px">
-  <h2>Perguntas frequentes</h2>
-  <details><summary>Funciona sem fio?</summary><p>Sim. Ele é recarregável pelo cabo USB que vem na caixa.</p></details>
-  <details><summary>Posso carregar no carro?</summary><p>Sim, em uma entrada USB de 5V do carro ou em um carregador veicular USB.</p></details>
-  <details><summary>Serve para usar em casa?</summary><p>Serve para sofá, teclado, mesa e cantinhos. O foco dele é sujeira leve e seca, como farelo, migalha e poeira.</p></details>
-  <details><summary>Como limpo o filtro?</summary><p>Retire o copo transparente e bata o filtro no lixo.</p></details>
-  <details><summary>Como funciona a devolução?</summary><p>Você tem 7 dias após receber para desistir da compra e receber o valor de volta. Veja a <a data-modal="troca">Política de Troca e Devolução</a>.</p></details>
-  <details><summary>Como acompanho meu pedido?</summary><p>Depois da confirmação do pagamento, você recebe as informações de envio. Dúvidas: contato@kaiross.com.br</p></details>
- </div>
+<div class="wrap" style="max-width:760px">
+<h2>Perguntas frequentes</h2>
+<details><summary>Funciona sem fio?</summary><p>Sim. Ele é recarregável pelo cabo USB que vem na caixa.</p></details>
+<details><summary>Posso carregar no carro?</summary><p>Sim, em uma entrada USB de 5V do carro ou em um carregador veicular USB.</p></details>
+<details><summary>Serve para usar em casa?</summary><p>Serve para sofá, teclado, mesa e cantinhos. O foco dele é sujeira leve e seca, como farelo, migalha e poeira.</p></details>
+<details><summary>Como limpo o filtro?</summary><p>Retire o copo transparente e bata o filtro no lixo.</p></details>
+<details><summary>Como funciona a devolução?</summary><p>Você tem 7 dias após receber para desistir da compra e receber o valor de volta. Veja a <a data-modal="troca">Política de Troca e Devolução</a>.</p></details>
+<details><summary>Como acompanho meu pedido?</summary><p>Depois da confirmação do pagamento, você recebe as informações de envio. Dúvidas: contato@kaiross.com.br</p></details>
+</div>
 </section>
-
-<!-- ===== 15. GARANTIA ===== -->
 <section class="blk">
- <div class="wrap" style="max-width:760px">
-  <div class="card guar">
-   <div class="seal" aria-hidden="true"><b>7</b><small>DIAS</small></div>
-   <div><h2 style="font-size:1.3rem;margin-bottom:6px">Sem risco para testar</h2><p>Recebeu e não era o que você esperava? Você tem 7 dias após o recebimento para pedir a devolução.</p></div>
-  </div>
- </div>
+<div class="wrap" style="max-width:760px">
+<div class="card guar">
+<div class="seal" aria-hidden="true"><b>7</b><small>DIAS</small></div>
+<div><h2 style="font-size:1.3rem;margin-bottom:6px">Sem risco para testar</h2><p>Recebeu e não era o que você esperava? Você tem 7 dias após o recebimento para pedir a devolução.</p></div>
+</div>
+</div>
 </section>
-
-<!-- ===== 16. FECHAMENTO ===== -->
 <section class="blk dark">
- <div class="wrap final">
-  <h2 style="max-width:720px;margin:0 auto 12px">O biscoito vai cair de novo. A diferença é que agora você resolve em minutos.</h2>
-  <p>Pare de brigar com o banco de trás e deixe o MigaZero fazer o trabalho.</p>
-  <div class="media"><img src="img/produto.webp" alt="MigaZero, aspirador portátil sem fio" loading="lazy" width="420" height="411"></div>
-  <div class="price"><strong>R$ 119,90</strong><span class="free">Frete grátis</span></div>
-  <div class="btnwrap">
-   <a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a>
-   <div class="consent">Ao seguir, você concorda com nossa <a data-modal="privacidade">Política de Privacidade</a>, <a data-modal="cookies">Política de Cookies</a>, <a data-modal="termos">Termos de Compra</a> e <a data-modal="troca">Política de Troca e Devolução</a>.</div>
-  </div>
- </div>
+<div class="wrap final">
+<h2 style="max-width:720px;margin:0 auto 12px">O biscoito vai cair de novo. A diferença é que agora você resolve em minutos.</h2>
+<p>Pare de brigar com o banco de trás e deixe o MigaZero fazer o trabalho.</p>
+<div class="media"><img src="img/produto.webp" alt="MigaZero, aspirador portátil sem fio" loading="lazy" width="420" height="411"></div>
+<div class="price"><strong>R$ 119,90</strong><span class="free">Frete grátis</span></div>
+<div class="btnwrap">
+<a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">QUERO MEU MIGAZERO</a>
+<div class="consent">Ao seguir, você concorda com nossa <a data-modal="privacidade">Política de Privacidade</a>, <a data-modal="cookies">Política de Cookies</a>, <a data-modal="termos">Termos de Compra</a> e <a data-modal="troca">Política de Troca e Devolução</a>.</div>
+</div>
+</div>
 </section>
 </main>
-
 <footer>
- <div class="wrap">
-  <div class="fbrand">MigaZero © 2026</div>
-  <div>Pagamento e atendimento pela Kaiross Intermediações LTDA · CNPJ 66.417.299/0001-92 · contato@kaiross.com.br</div>
-  <nav aria-label="Políticas">
-   <a data-modal="privacidade">Política de Privacidade</a>
-   <a data-modal="cookies">Política de Cookies</a>
-   <a data-modal="termos">Termos de Compra</a>
-   <a data-modal="troca">Troca e Devolução</a>
-   <a id="cookie-prefs">Preferências de cookies</a>
-  </nav>
- </div>
+<div class="wrap">
+<div class="fbrand">MigaZero © 2026</div>
+<div>Pagamento e atendimento pela Kaiross Intermediações LTDA · CNPJ 66.417.299/0001-92 · contato@kaiross.com.br</div>
+<nav aria-label="Políticas">
+<a data-modal="privacidade">Política de Privacidade</a>
+<a data-modal="cookies">Política de Cookies</a>
+<a data-modal="termos">Termos de Compra</a>
+<a data-modal="troca">Troca e Devolução</a>
+<a id="cookie-prefs">Preferências de cookies</a>
+</nav>
+</div>
 </footer>
-
-<!-- sticky mobile -->
 <div class="sticky" id="sticky" aria-hidden="true">
- <div class="row">
-  <div class="sp"><strong>R$ 119,90</strong><small>Frete grátis</small></div>
-  <a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV" tabindex="-1">QUERO MEU MIGAZERO</a>
- </div>
- <div class="consent">Ao seguir, você concorda com nossa <a data-modal="privacidade" tabindex="-1">Política de Privacidade</a>, <a data-modal="cookies" tabindex="-1">Cookies</a>, <a data-modal="termos" tabindex="-1">Termos</a> e <a data-modal="troca" tabindex="-1">Troca e Devolução</a>.</div>
+<div class="row">
+<div class="sp"><strong>R$ 119,90</strong><small>Frete grátis</small></div>
+<a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV" tabindex="-1">QUERO MEU MIGAZERO</a>
 </div>
-
-<!-- cookie banner -->
+<div class="consent">Ao seguir, você concorda com nossa <a data-modal="privacidade" tabindex="-1">Política de Privacidade</a>, <a data-modal="cookies" tabindex="-1">Cookies</a>, <a data-modal="termos" tabindex="-1">Termos</a> e <a data-modal="troca" tabindex="-1">Troca e Devolução</a>.</div>
+</div>
 <div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Consentimento de cookies">
- <p>Usamos cookies para o site funcionar e, se você permitir, para medir visitas e anúncios. Saiba mais na nossa <a data-modal="cookies">Política de Cookies</a>.</p>
- <div class="cbtns">
-  <button class="c-ok" id="c-ok" type="button">Aceitar</button>
-  <button class="c-min" id="c-min" type="button">Aceitar somente necessários</button>
- </div>
+<p>Usamos cookies para o site funcionar e, se você permitir, para medir visitas e anúncios. Saiba mais na nossa <a data-modal="cookies">Política de Cookies</a>.</p>
+<div class="cbtns">
+<button class="c-ok" id="c-ok" type="button">Aceitar</button>
+<button class="c-min" id="c-min" type="button">Aceitar somente necessários</button>
 </div>
-
-<!-- modal -->
+</div>
 <dialog id="modal" aria-labelledby="mtitle">
- <div class="mhead"><h2 id="mtitle"></h2><button class="mclose" id="mclose" type="button">Fechar</button></div>
- <div class="mbody" id="mbody"></div>
+<div class="mhead"><h2 id="mtitle"></h2><button class="mclose" id="mclose" type="button">Fechar</button></div>
+<div class="mbody" id="mbody"></div>
 </dialog>
-
-<!-- ===== TEXTOS DAS POLÍTICAS ===== -->
 <template id="t-privacidade" data-title="Política de Privacidade">
 <p class="upd">Última atualização: 14 de novembro de 2026</p>
 <h3>1. Sobre esta política</h3>
@@ -504,7 +457,6 @@ dialog::backdrop{background:rgba(17,17,17,.55)}
 <h3>11. Alterações</h3>
 <p>Esta política pode ser atualizada. A versão vigente fica sempre disponível neste site.</p>
 </template>
-
 <template id="t-cookies" data-title="Política de Cookies">
 <p class="upd">Última atualização: 14 de novembro de 2026</p>
 <h3>1. O que são cookies</h3>
@@ -518,7 +470,6 @@ dialog::backdrop{background:rgba(17,17,17,.55)}
 <h3>5. Alterações</h3>
 <p>Esta política pode ser atualizada. A versão vigente fica sempre disponível neste site.</p>
 </template>
-
 <template id="t-termos" data-title="Termos de Compra">
 <p class="upd">Última atualização: 14 de novembro de 2026</p>
 <h3>1. Quem participa da compra</h3>
@@ -538,7 +489,6 @@ dialog::backdrop{background:rgba(17,17,17,.55)}
 <h3>8. Alterações</h3>
 <p>Estes termos podem ser atualizados. Vale a versão publicada na data da sua compra.</p>
 </template>
-
 <template id="t-troca" data-title="Política de Troca e Devolução">
 <p class="upd">Última atualização: 14 de novembro de 2026</p>
 <h3>1. Direito de arrependimento (7 dias)</h3>
@@ -552,82 +502,79 @@ dialog::backdrop{background:rgba(17,17,17,.55)}
 <h3>5. Reembolso</h3>
 <p>Depois que o produto devolvido for recebido e conferido, o reembolso é feito no mesmo meio de pagamento. No cartão de crédito, o estorno pode aparecer em até duas faturas, conforme a operadora.</p>
 </template>
-
 <script>
 (function(){
- var MZ = window.MZ || {};
- // checkout links
- if (MZ.CHECKOUT_URL) {
-   document.querySelectorAll('.buy-link').forEach(function(a){ a.href = MZ.CHECKOUT_URL; });
- }
- // gallery
- var main = document.getElementById('gmain');
- document.querySelectorAll('.thumbs button').forEach(function(b){
-   b.addEventListener('click', function(){
-     document.querySelectorAll('.thumbs button').forEach(function(x){ x.setAttribute('aria-current','false'); });
-     b.setAttribute('aria-current','true'); main.src = b.dataset.src; main.alt = b.dataset.alt;
-   });
- });
-
- // modal
- var dlg = document.getElementById('modal');
- function openModal(key){
-   var t = document.getElementById('t-' + key); if (!t) return;
-   document.getElementById('mtitle').textContent = t.dataset.title;
-   var body = document.getElementById('mbody'); body.innerHTML = ''; body.appendChild(t.content.cloneNode(true));
-   if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open','');
-   dlg.scrollTop = 0; body.scrollTop = 0;
- }
- document.addEventListener('click', function(e){
-   var a = e.target.closest('[data-modal]'); if (a){ e.preventDefault(); openModal(a.dataset.modal); }
- });
- document.getElementById('mclose').onclick = function(){ dlg.close ? dlg.close() : dlg.removeAttribute('open'); };
- dlg.addEventListener('click', function(e){ if (e.target === dlg) dlg.close(); });
-
- // sticky bar
- var sticky = document.getElementById('sticky'), hero = document.querySelector('.hero'), offer = document.getElementById('oferta'), finalS = document.querySelector('.final');
- var heroVis = true, hide = false;
- function upd(){ var show = !heroVis && !hide; sticky.classList.toggle('show', show); sticky.setAttribute('aria-hidden', show ? 'false':'true');
-   sticky.querySelectorAll('a').forEach(function(a){ a.tabIndex = show ? 0 : -1; }); }
- if ('IntersectionObserver' in window){
-   new IntersectionObserver(function(en){ var r = en[0]; heroVis = r.isIntersecting || r.boundingClientRect.top > 0; upd(); }, {threshold:0}).observe(document.querySelector('.buy .btn'));
-   var vis = new Set();
-   var io = new IntersectionObserver(function(en){ en.forEach(function(x){ x.isIntersecting ? vis.add(x.target) : vis.delete(x.target); }); hide = vis.size>0; upd(); }, {threshold:.25});
-   io.observe(offer); io.observe(finalS);
- }
-
-
- // demo video: autoplay muted only when visible
- var dv = document.getElementById('demovid');
- if (dv){ dv.muted = true;
-   if ('IntersectionObserver' in window){
-     new IntersectionObserver(function(en){ en.forEach(function(x){ if (x.isIntersecting){ if (dv.preload==='none'){ dv.preload='auto'; dv.load(); } var p = dv.play(); if (p && p.catch) p.catch(function(){}); } else { dv.pause(); } }); }, {threshold:.35}).observe(dv);
-   } else { dv.preload='auto'; dv.play(); }
- }
- // cookies
- var KEY = 'mz_consent', banner = document.getElementById('cookie');
- function getC(){ try { return localStorage.getItem(KEY); } catch(e){ return null; } }
- function setC(v){ try { localStorage.setItem(KEY, v); } catch(e){} }
- var loaded = false;
- function loadTracking(){
-   if (loaded) return; loaded = true;
-   if (MZ.META_PIXEL_ID){
-     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-     fbq('init', MZ.META_PIXEL_ID); fbq('track','PageView');
-     document.querySelectorAll('.buy-link').forEach(function(a){ a.addEventListener('click', function(){ if (window.fbq) fbq('track','InitiateCheckout',{value:119.90,currency:'BRL'}); }); });
-   }
-   if (MZ.GA_ID){
-     var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + MZ.GA_ID; document.head.appendChild(s);
-     window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); }; gtag('js', new Date()); gtag('config', MZ.GA_ID);
-   }
- }
- function showBanner(){ banner.classList.add('show'); document.body.style.paddingBottom = (banner.offsetHeight + 20) + 'px'; sticky.style.bottom = banner.offsetHeight + 'px'; }
- function hideBanner(){ banner.classList.remove('show'); document.body.style.paddingBottom = ''; sticky.style.bottom = ''; }
- document.getElementById('c-ok').onclick = function(){ setC('all'); hideBanner(); loadTracking(); };
- document.getElementById('c-min').onclick = function(){ var was = getC(); setC('necessary'); hideBanner(); if (was === 'all' && loaded) location.reload(); };
- document.getElementById('cookie-prefs').onclick = function(e){ e.preventDefault(); showBanner(); };
- var c = getC();
- if (c === 'all') loadTracking(); else if (!c) showBanner();
+var MZ = window.MZ || {};
+// checkout links
+if (MZ.CHECKOUT_URL) {
+document.querySelectorAll('.buy-link').forEach(function(a){ a.href = MZ.CHECKOUT_URL; });
+}
+// gallery
+var main = document.getElementById('gmain');
+document.querySelectorAll('.thumbs button').forEach(function(b){
+b.addEventListener('click', function(){
+document.querySelectorAll('.thumbs button').forEach(function(x){ x.setAttribute('aria-current','false'); });
+b.setAttribute('aria-current','true'); main.src = b.dataset.src; main.alt = b.dataset.alt;
+});
+});
+// modal
+var dlg = document.getElementById('modal');
+function openModal(key){
+var t = document.getElementById('t-' + key); if (!t) return;
+document.getElementById('mtitle').textContent = t.dataset.title;
+var body = document.getElementById('mbody'); body.innerHTML = ''; body.appendChild(t.content.cloneNode(true));
+if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open','');
+dlg.scrollTop = 0; body.scrollTop = 0;
+}
+document.addEventListener('click', function(e){
+var a = e.target.closest('[data-modal]'); if (a){ e.preventDefault(); openModal(a.dataset.modal); }
+});
+document.getElementById('mclose').onclick = function(){ dlg.close ? dlg.close() : dlg.removeAttribute('open'); };
+dlg.addEventListener('click', function(e){ if (e.target === dlg) dlg.close(); });
+// sticky bar
+var sticky = document.getElementById('sticky'), hero = document.querySelector('.hero'), offer = document.getElementById('oferta'), finalS = document.querySelector('.final');
+var heroVis = true, hide = false;
+function upd(){ var show = !heroVis && !hide; sticky.classList.toggle('show', show); sticky.setAttribute('aria-hidden', show ? 'false':'true');
+sticky.querySelectorAll('a').forEach(function(a){ a.tabIndex = show ? 0 : -1; }); }
+if ('IntersectionObserver' in window){
+new IntersectionObserver(function(en){ var r = en[0]; heroVis = r.isIntersecting || r.boundingClientRect.top > 0; upd(); }, {threshold:0}).observe(document.querySelector('.buy .btn'));
+var vis = new Set();
+var io = new IntersectionObserver(function(en){ en.forEach(function(x){ x.isIntersecting ? vis.add(x.target) : vis.delete(x.target); }); hide = vis.size>0; upd(); }, {threshold:.25});
+io.observe(offer); io.observe(finalS);
+}
+// demo video: autoplay muted only when visible
+var dv = document.getElementById('demovid');
+if (dv){ dv.muted = true;
+var hideDemo = function(){ var d = dv.closest('.demo'); if (d) d.style.display='none'; };
+dv.addEventListener('error', hideDemo, true); var src = dv.querySelector('source'); if (src) src.addEventListener('error', hideDemo);
+if ('IntersectionObserver' in window){
+new IntersectionObserver(function(en){ en.forEach(function(x){ if (x.isIntersecting){ if (dv.preload==='none'){ dv.preload='auto'; dv.load(); } var p = dv.play(); if (p && p.catch) p.catch(function(){}); } else { dv.pause(); } }); }, {threshold:.35}).observe(dv);
+} else { dv.preload='auto'; dv.play(); }
+}
+// cookies
+var KEY = 'mz_consent', banner = document.getElementById('cookie');
+function getC(){ try { return localStorage.getItem(KEY); } catch(e){ return null; } }
+function setC(v){ try { localStorage.setItem(KEY, v); } catch(e){} }
+var loaded = false;
+function loadTracking(){
+if (loaded) return; loaded = true;
+if (MZ.META_PIXEL_ID){
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', MZ.META_PIXEL_ID); fbq('track','PageView');
+document.querySelectorAll('.buy-link').forEach(function(a){ a.addEventListener('click', function(){ if (window.fbq) fbq('track','InitiateCheckout',{value:119.90,currency:'BRL'}); }); });
+}
+if (MZ.GA_ID){
+var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + MZ.GA_ID; document.head.appendChild(s);
+window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); }; gtag('js', new Date()); gtag('config', MZ.GA_ID);
+}
+}
+function showBanner(){ banner.classList.add('show'); document.body.style.paddingBottom = (banner.offsetHeight + 20) + 'px'; sticky.style.bottom = banner.offsetHeight + 'px'; }
+function hideBanner(){ banner.classList.remove('show'); document.body.style.paddingBottom = ''; sticky.style.bottom = ''; }
+document.getElementById('c-ok').onclick = function(){ setC('all'); hideBanner(); loadTracking(); };
+document.getElementById('c-min').onclick = function(){ var was = getC(); setC('necessary'); hideBanner(); if (was === 'all' && loaded) location.reload(); };
+document.getElementById('cookie-prefs').onclick = function(e){ e.preventDefault(); showBanner(); };
+var c = getC();
+if (c === 'all') loadTracking(); else if (!c) showBanner();
 })();
 </script>
 </body>
