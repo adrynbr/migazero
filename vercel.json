@@ -1,1 +1,4 @@
-{"redirects":[{"source":"/(.*)","has":[{"type":"host","value":"migazero.vercel.app"}],"destination":"https://pratikasa.vercel.app/migazero","permanent":false}]}
+{"redirects":[
+{"source":"/migazero","destination":"/migazero/","permanent":false},
+{"source":"/(.*)","has":[{"type":"host","value":"migazero.vercel.app"}],"destination":"https://pratikasa.vercel.app/migazero/","permanent":false}
+]}
