@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MigaZero | Aspirador Portátil Sem Fio para Carro</title>
-<meta name="description" content="Quantas vezes você já gritou &quot;não come no carro&quot;? O MigaZero puxa o farelo da cadeirinha e da fresta do banco. Sem fio, recarregável por USB. R$ 119,90 com frete grátis.">
+<meta name="description" content="Quantas vezes você já gritou &quot;não come no carro&quot;? O MigaZero puxa o farelo da cadeirinha e da fresta do banco. Sem fio, recarregável por USB. De R$ 119,90 por R$ 95,90 na Black Friday, com frete grátis.">
 <meta property="og:title" content="MigaZero | Pode comer no carro.">
-<meta property="og:description" content="Aspirador portátil sem fio com bico de frestas e escova. R$ 119,90 com frete grátis.">
+<meta property="og:description" content="Aspirador portátil sem fio com bico de frestas e escova. De R$ 119,90 por R$ 95,90 na Black Friday, com frete grátis.">
 <meta property="og:image" content="https://pratikasa.vercel.app/migazero/v2/uso-mao.webp">
 <meta name="theme-color" content="#0131CD">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,6 +50,26 @@ a{color:var(--link)}
 .rule{width:56px;height:4px;border-radius:4px;background:var(--lime);margin:18px auto 20px;border:0}
 .quote{border-left:3px solid var(--lime);padding:2px 0 2px 16px;font-style:italic;color:var(--muted);font-size:.92rem;margin-top:18px}
 p+p{margin-top:12px}
+
+
+/* BLACK FRIDAY */
+.bf-bar{background:#000;color:#fff;text-align:center;font-size:.74rem;font-weight:600;letter-spacing:.03em;line-height:1.4;padding:8px 14px}
+.bf-bar b{color:var(--lime);font-weight:800}
+.bf-bar s{opacity:.7}
+.pbox{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;margin:14px 0 12px}
+.pbox .was{flex:0 0 100%;font-size:.95rem;font-weight:500;color:#8A90A8;text-decoration:line-through}
+.pbox .now{font-family:var(--serif);font-weight:900;color:var(--blue);font-size:2.6rem;letter-spacing:-.02em;line-height:1}
+.pbox .now small{font-family:var(--sans);font-size:.95rem;font-weight:700;letter-spacing:0;margin-right:4px}
+.dark .pbox .was{color:#B9C4EE}
+.dark .pbox .now{color:var(--lime)}
+.bf-badge{display:inline-block;background:#000;color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:7px 12px;border-radius:8px;white-space:nowrap}
+.bf-badge em{font-style:normal;color:#FFD400}
+.dark .bf-badge{background:#000;color:#fff}
+.sticky .sp{display:flex;flex-direction:column;gap:2px;align-items:flex-start}
+.sticky .sp .was{font-size:.7rem;font-weight:500;color:#8A90A8;text-decoration:line-through;line-height:1.1}
+.sticky .row .sp b{font-size:1.3rem;line-height:1.05;color:var(--blue);display:block}
+.sticky .sp b small{display:inline;font-size:.7rem;font-weight:700;color:var(--blue);letter-spacing:0;text-transform:none;margin-right:3px}
+.sticky .sp .bf-badge{font-size:.54rem;padding:3px 7px;letter-spacing:.06em;border-radius:5px}
 
 /* header */
 .top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
@@ -248,6 +268,8 @@ dialog::backdrop{background:rgba(10,20,64,.6)}
 </head>
 <body class="has-sticky">
 
+<div class="bf-bar" role="note">BLACK FRIDAY: MigaZero de <s>R$ 119,90</s> por <b>R$ 95,90</b> · Frete grátis · Válido até 30/11</div>
+
 <header class="top">
  <div class="wrap">
   <a class="logo" href="#topo">MigaZero</a>
@@ -269,8 +291,8 @@ dialog::backdrop{background:rgba(10,20,64,.6)}
   <p class="lead">Com o MigaZero, o biscoito pode cair. O bico fino puxa o farelo da cadeirinha e da fresta do banco enquanto você espera na porta da escola, sem fio e sem ir ao posto.</p>
 
   <div class="offer-card">
-   <div class="name">Aspirador Portátil Sem Fio MigaZero com Bico de Frestas e Escova</div>
-   <div class="price">R$ 119,90</div>
+   <div class="name">MigaZero – Mini Aspirador Automotivo Portátil Sem Fio Recarregável Bivolt</div>
+   <div class="pbox"><span class="was">De R$ 119,90</span><div class="now"><small>Por</small>R$ 95,90</div><span class="bf-badge"><em>-20%</em> Black Friday</span></div>
    <span class="free"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>Frete grátis</span>
    <ul class="checks">
     <li>Bico fino que entra onde a sua mão não entra</li>
@@ -425,7 +447,7 @@ dialog::backdrop{background:rgba(10,20,64,.6)}
   <div class="center narrow rv"><h2 class="h2">Antes de você perguntar</h2><hr class="rule"></div>
   <div class="obj-grid">
    <div class="obj rv"><h3>“Será que presta? Aspirador pequeno não puxa nada.”</h3><p>Ele não foi feito para substituir o aspirador de casa. Foi feito para farelo, migalha, areia e poeira de carro, que é exatamente a sujeira que se acumula todo dia.</p></div>
-   <div class="obj rv"><h3>“Vale R$ 119,90?”</h3><p>Faça a conta de quantas vezes você já foi ao lava-rápido só por causa do farelo do banco de trás. O MigaZero fica no carro e trabalha todos os dias.</p></div>
+   <div class="obj rv"><h3>“Vale R$ 95,90?”</h3><p>Faça a conta de quantas vezes você já foi ao lava-rápido só por causa do farelo do banco de trás. O MigaZero fica no carro e trabalha todos os dias.</p></div>
    <div class="obj rv"><h3>“E se eu não gostar?”</h3><p>Você tem 7 dias após receber para devolver, conforme o Código de Defesa do Consumidor.</p></div>
   </div>
  </div>
@@ -443,7 +465,7 @@ dialog::backdrop{background:rgba(10,20,64,.6)}
     <li>1 cabo USB de recarga</li>
     <li>7 dias para devolver após receber</li>
    </ul>
-   <div class="price">R$ 119,90</div>
+   <div class="pbox"><span class="was">De R$ 119,90</span><div class="now"><small>Por</small>R$ 95,90</div><span class="bf-badge"><em>-20%</em> Black Friday</span></div>
    <span class="free"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>Frete grátis</span>
    <div style="margin-top:22px;max-width:440px">
     <a class="btn block buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">Quero garantir meu MigaZero</a>
@@ -493,7 +515,7 @@ dialog::backdrop{background:rgba(10,20,64,.6)}
    <h2 class="display" style="font-size:clamp(1.9rem,6.4vw,3rem)">O biscoito vai cair de novo.</h2>
    <p class="lead" style="margin-top:16px">A diferença é que agora você resolve em minutos. Pare de brigar com o banco de trás e deixe o MigaZero fazer o trabalho.</p>
    <div class="close-box"><b>Pode comer no carro.</b></div>
-   <div class="price">R$ 119,90</div>
+   <div class="pbox"><span class="was">De R$ 119,90</span><div class="now"><small>Por</small>R$ 95,90</div><span class="bf-badge"><em>-20%</em> Black Friday</span></div>
    <span class="free"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>Frete grátis</span>
    <div style="margin-top:22px;max-width:440px">
     <a class="btn ink block buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV">Quero meu MigaZero</a>
@@ -533,7 +555,7 @@ dialog::backdrop{background:rgba(10,20,64,.6)}
 
 <div class="sticky" id="sticky" aria-hidden="true">
  <div class="row">
-  <div class="sp"><b>R$ 119,90</b><small>Frete grátis</small></div>
+  <div class="sp"><span class="was">De R$ 119,90</span><b><small>Por</small>R$ 95,90</b><span class="bf-badge"><em>-20%</em> Black Friday</span></div>
   <a class="btn buy-link" href="https://pay.kaiross.com.br/l7B5HY36NdSV" tabindex="-1">Quero meu MigaZero</a>
  </div>
  <div class="consent">Ao seguir, você concorda com nossa <a data-modal="privacidade" tabindex="-1">Política de Privacidade</a>, <a data-modal="cookies" tabindex="-1">Cookies</a>, <a data-modal="termos" tabindex="-1">Termos</a> e <a data-modal="troca" tabindex="-1">Troca e Devolução</a>.</div>
@@ -692,7 +714,7 @@ dialog::backdrop{background:rgba(10,20,64,.6)}
   if (MZ.META_PIXEL_ID){
    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
    fbq('init', MZ.META_PIXEL_ID); fbq('track','PageView');
-   document.querySelectorAll('.buy-link').forEach(function(a){ a.addEventListener('click', function(){ if (window.fbq) fbq('track','InitiateCheckout',{value:119.90,currency:'BRL'}); }); });
+   document.querySelectorAll('.buy-link').forEach(function(a){ a.addEventListener('click', function(){ if (window.fbq) fbq('track','InitiateCheckout',{value:95.90,currency:'BRL'}); }); });
   }
   if (MZ.GA_ID){
    var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+MZ.GA_ID; document.head.appendChild(s);
